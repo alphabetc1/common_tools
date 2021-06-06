@@ -51,7 +51,7 @@ func (r *HTTPClient) SetParams(params map[string]string) error {
 	return nil
 }
 
-// Do do HTTP request, return code, byte and error.
+// Do do HTTP reques, return code, byte and error.
 func (r *HTTPClient) Do() (int, []byte, error) {
 	client := &http.Client{Timeout: r.timeout}
 	var body []byte
@@ -89,7 +89,7 @@ func (r *HTTPClient) Do() (int, []byte, error) {
 	return resp.StatusCode, content, nil
 }
 
-// DoReturnResp do HTTP requests, return httpResp and error.
+// DoReturnResp do HTTP request, return httpResp and error.
 func (r *HTTPClient) DoReturnResp() (*http.Response, error) {
 	client := new(http.Client)
 	var body []byte
