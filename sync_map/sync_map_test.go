@@ -1,4 +1,4 @@
-package metricstool
+package syncmap
 
 import (
 	"strconv"
